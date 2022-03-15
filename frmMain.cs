@@ -36,6 +36,9 @@ namespace AS2122_3G_INF_EdoardoPieri_GestionePizzeria
                         break;
                 }
                 nPizze[tipoPizza] = nPizze[tipoPizza] + Convert.ToInt32(txtQuantita.Text);
+                lblMargherita.Text = $"Pizze Margherite: {Convert.ToString(nPizze[0])}";
+                lbl4Stagioni.Text = $"Pizze 4 stagioni: {Convert.ToString(nPizze[1])}";
+                lblVerdure.Text = $"Pizze verdure: {Convert.ToString(nPizze[2])}";
                 lstPizze.Items.Add($"{cmbPizze.Text} {nPizze[tipoPizza]}");
 
             }
