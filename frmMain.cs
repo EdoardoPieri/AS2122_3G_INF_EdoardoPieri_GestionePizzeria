@@ -12,10 +12,27 @@ namespace AS2122_3G_INF_EdoardoPieri_GestionePizzeria
 {
     public partial class frmMain : Form
     {
+        int tipoPizza;
+        int[] nPizze = new int[3];
         public frmMain()
         {
             InitializeComponent();
         }
 
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+            if(txtQuantita.Text != "")
+            {
+                switch(cmbPizze.Text)
+                {
+                    case "margherita":
+                        tipoPizza = 0;
+                        break;
+                }
+                nPizze[tipoPizza] = nPizze[tipoPizza] + Convert.ToInt32(txtQuantita.Text);
+                lstPizze.Items.Add($"{cmbPizze.Text} {nPizze[tipoPizza]}");
+
+            }
+        }
     }
 }

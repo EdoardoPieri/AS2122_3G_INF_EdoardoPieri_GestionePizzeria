@@ -61,6 +61,10 @@ namespace AS2122_3G_INF_EdoardoPieri_GestionePizzeria
             // cmbPizze
             // 
             this.cmbPizze.FormattingEnabled = true;
+            this.cmbPizze.Items.AddRange(new object[] {
+            "margherita",
+            "4 stagioni",
+            "verdure"});
             this.cmbPizze.Location = new System.Drawing.Point(154, 88);
             this.cmbPizze.Name = "cmbPizze";
             this.cmbPizze.Size = new System.Drawing.Size(121, 23);
@@ -90,6 +94,7 @@ namespace AS2122_3G_INF_EdoardoPieri_GestionePizzeria
             this.btnAggiungi.TabIndex = 5;
             this.btnAggiungi.Text = "Aggiungi";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // lblMargherita
             // 
