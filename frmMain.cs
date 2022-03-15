@@ -28,6 +28,9 @@ namespace AS2122_3G_INF_EdoardoPieri_GestionePizzeria
                     case "margherita":
                         tipoPizza = 0;
                         break;
+                    case "4 stagioni":
+                        tipoPizza = 1;
+                        break;
                 }
                 nPizze[tipoPizza] = nPizze[tipoPizza] + Convert.ToInt32(txtQuantita.Text);
                 lstPizze.Items.Add($"{cmbPizze.Text} {nPizze[tipoPizza]}");
